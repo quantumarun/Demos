@@ -29,7 +29,7 @@ In your customCell class, update the HeightConstraintProperty of SecondView on c
       }
 
 In Your ViewController
-     Implement the TableViewDelegates, in didSelectRowAtIndexPath set the indexPath.row to a variable and reload the cell using begin and end updates
+   Implement the TableViewDelegates, in didSelectRowAtIndexPath set the indexPath.row to a variable and reload the cell using begin and end updates
      
       func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if(selectedIndex == indexPath.row) {
@@ -43,7 +43,7 @@ In Your ViewController
       }
         
         
-     In heightForRowAtIndexPath set the height of the cell accordingly for selectedIndex
+   In heightForRowAtIndexPath set the height of the cell accordingly for selectedIndex
          
         func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
           if(selectedIndex == indexPath.row) {
