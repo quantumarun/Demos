@@ -33,14 +33,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let obj = dataArray[indexPath.row]
         cell.matchName.text = obj["MatchName"]
-        if(selectedIndex == indexPath.row) {
-            cell.heightConstraintSecondView.constant = 0
-        } else {
-            cell.heightConstraintSecondView.constant = 59
-            cell.team1.text = obj["Team1"]
-            cell.team2.text = obj["Team2"]
-            cell.score.text = obj["Score"]
-        }
+        cell.team1.text = obj["Team1"]
+        cell.team2.text = obj["Team2"]
+        cell.score.text = obj["Score"]
         return cell;
     }
     
@@ -53,7 +48,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedIndex = indexPath.row
+        if(selectedIndex == indexPath.row) {
+            selectedIndex = -1
+        } else {
+            selectedIndex = indexPath.row
+        }
         self.expandTableView.beginUpdates()
         self.expandTableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic )
         self.expandTableView.endUpdates()

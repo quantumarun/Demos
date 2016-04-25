@@ -27,5 +27,11 @@ class customCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    var showsDetails = false {
+        didSet {
+            heightConstraintSecondView.priority = showsDetails ? 250 : 999
+        }
+    }
 
 }

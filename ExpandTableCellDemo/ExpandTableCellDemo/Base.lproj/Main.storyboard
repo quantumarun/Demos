@@ -73,7 +73,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score : 0-0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLd-7S-tNr">
-                                                            <rect key="frame" x="250" y="35" width="100" height="21"/>
+                                                            <rect key="frame" x="250" y="30" width="100" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Zsj-TI-sDw"/>
                                                                 <constraint firstAttribute="width" constant="100" id="vug-XB-ghc"/>
@@ -85,13 +85,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.85490196080000003" green="0.86274509799999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="KLd-7S-tNr" firstAttribute="centerX" secondItem="F0a-sb-aGc" secondAttribute="centerX" id="0aw-t8-hIn"/>
-                                                        <constraint firstItem="qFl-nn-mEU" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" constant="8" id="Ay0-5j-4lg"/>
-                                                        <constraint firstItem="KLd-7S-tNr" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" constant="35" id="ElJ-6w-Vb4"/>
-                                                        <constraint firstItem="qFl-nn-mEU" firstAttribute="leading" secondItem="F0a-sb-aGc" secondAttribute="leading" constant="59" id="TGF-Mw-zte"/>
-                                                        <constraint firstAttribute="trailing" secondItem="WIs-sb-7qK" secondAttribute="trailing" constant="29" id="eOI-Bo-l8n"/>
-                                                        <constraint firstItem="WIs-sb-7qK" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" constant="8" id="eTB-hb-djd"/>
-                                                        <constraint firstAttribute="height" constant="59" id="rc5-ef-Rg2"/>
+                                                        <constraint firstItem="KLd-7S-tNr" firstAttribute="centerX" secondItem="F0a-sb-aGc" secondAttribute="centerX" priority="998" id="0aw-t8-hIn"/>
+                                                        <constraint firstItem="qFl-nn-mEU" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" priority="998" constant="8" id="Ay0-5j-4lg"/>
+                                                        <constraint firstItem="KLd-7S-tNr" firstAttribute="bottom" secondItem="F0a-sb-aGc" secondAttribute="bottom" priority="998" constant="-8" id="ElJ-6w-Vb4"/>
+                                                        <constraint firstItem="qFl-nn-mEU" firstAttribute="leading" secondItem="F0a-sb-aGc" secondAttribute="leading" priority="998" constant="59" id="TGF-Mw-zte"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WIs-sb-7qK" secondAttribute="trailing" priority="998" constant="29" id="eOI-Bo-l8n"/>
+                                                        <constraint firstItem="WIs-sb-7qK" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" priority="998" constant="8" id="eTB-hb-djd"/>
+                                                        <constraint firstAttribute="height" priority="999" constant="59" id="rc5-ef-Rg2"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
