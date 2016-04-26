@@ -1,4 +1,4 @@
-This Sample shows how to create a expandable and collapsible cell in UITableView
+#This Sample shows how to create a expandable and collapsible cell in UITableView
 
 ![alt tag](https://github.com/quantumarun/quantumarun.github.io/blob/master/Images/ExpandableUITableViewCells.gif)
 
