@@ -1,9 +1,10 @@
 #This Sample shows how to create a expandable and collapsible cell in UITableView
 
+You can watch the video here: https://youtu.be/LqHzHkuXRxQ
+
 ![alt tag](https://github.com/quantumarun/quantumarun.github.io/blob/master/Images/ExpandableUITableViewCells.gif)
 
-You can watch the video here:
-https://youtu.be/LqHzHkuXRxQ
+
 
 Lets walk through the example.
 I have UITableView with custom UITableViewCell called customCell with identifier as Cell and Style as custom. Cell is design in Storyboard within the UITableView by adding UITableViewCell.
