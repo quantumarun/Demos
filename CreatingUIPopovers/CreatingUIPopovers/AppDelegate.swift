@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PopOverDemo
+//  CreatingUIPopovers
 //
-//  Created by Arun on 3/30/16.
+//  Created by Arun on 5/27/16.
 //  Copyright © 2016 Arun. All rights reserved.
 //
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F486EADD1CABB9C200437C47"
-               BuildableName = "PopOverDemo.app"
-               BlueprintName = "PopOverDemo"
-               ReferencedContainer = "container:PopOverDemo.xcodeproj">
+               BlueprintIdentifier = "F4D4ABE21CF8849200715C41"
+               BuildableName = "CreatingUIPopovers.app"
+               BlueprintName = "CreatingUIPopovers"
+               ReferencedContainer = "container:CreatingUIPopovers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F486EADD1CABB9C200437C47"
-            BuildableName = "PopOverDemo.app"
-            BlueprintName = "PopOverDemo"
-            ReferencedContainer = "container:PopOverDemo.xcodeproj">
+            BlueprintIdentifier = "F4D4ABE21CF8849200715C41"
+            BuildableName = "CreatingUIPopovers.app"
+            BlueprintName = "CreatingUIPopovers"
+            ReferencedContainer = "container:CreatingUIPopovers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F486EADD1CABB9C200437C47"
-            BuildableName = "PopOverDemo.app"
-            BlueprintName = "PopOverDemo"
-            ReferencedContainer = "container:PopOverDemo.xcodeproj">
+            BlueprintIdentifier = "F4D4ABE21CF8849200715C41"
+            BuildableName = "CreatingUIPopovers.app"
+            BlueprintName = "CreatingUIPopovers"
+            ReferencedContainer = "container:CreatingUIPopovers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F486EADD1CABB9C200437C47"
-            BuildableName = "PopOverDemo.app"
-            BlueprintName = "PopOverDemo"
-            ReferencedContainer = "container:PopOverDemo.xcodeproj">
+            BlueprintIdentifier = "F4D4ABE21CF8849200715C41"
+            BuildableName = "CreatingUIPopovers.app"
+            BlueprintName = "CreatingUIPopovers"
+            ReferencedContainer = "container:CreatingUIPopovers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

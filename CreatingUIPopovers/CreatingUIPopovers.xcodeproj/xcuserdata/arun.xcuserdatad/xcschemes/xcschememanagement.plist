@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PopOverDemo.xcscheme</key>
+		<key>CreatingUIPopovers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F486EADD1CABB9C200437C47</key>
+		<key>F4D4ABE21CF8849200715C41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
