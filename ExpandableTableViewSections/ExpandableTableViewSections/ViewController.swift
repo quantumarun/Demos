@@ -13,9 +13,9 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var expandTableView: UITableView!
     var expandedSections : NSMutableSet = []
     var sectionData : [String] = ["Vegs", "Fruits",  "Birds", "Reptiles"]
-    var row1 = ["Tomato", "Onion", "Potato", "Pumpkin", "Babycorn", "Cucumber"]
-    var row2 = ["Mango", "Orange", "Watermelon", "Apple", "Apricot", "Banana"]
-    var row3 = ["Parrot", "Peacock", "Woodpecker", "Kingfisher", "Owl", "Eagle"]
+    var row1 = ["Tomato", "Onion", "Potato", "Pumpkin", "Babycorn", "Cucumber", "Carrot", "Beans", "Cabbage", "Corn", "EggPlant", "Pea", "Sweet Potato"]
+    var row2 = ["Mango", "Orange", "Watermelon", "Apple", "Apricot", "Banana", "Papaya", "Pineapple", "Melon", "Avocado", "Cherry", "Date", "Fig", "Grape", "Guava", "Kiwi", "Olive", "Pear"]
+    var row3 = ["Parrot", "Peacock", "Woodpecker", "Kingfisher", "Owl", "Eagle", "Pigeon", "Vulture", "Bats", "Nightingale", "Crow"]
     var row4 = ["Lizard", "Crocodile", "Snake", "Turtle", "Dinosaur"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,7 @@ extension ViewController: UITableViewDelegate {
         headerView.addSubview(imageView)
         headerView.addSubview(headerTitle)
         headerView.addSubview(tappedSection)
+        headerView.backgroundColor = UIColor.lightGray
         return headerView
     }
     
@@ -78,11 +79,11 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(expandedSections.contains(section)) {
             switch section {
-            case 1:
+            case 0:
                 return row1.count
-            case 2:
+            case 1:
                 return row2.count
-            case 3:
+            case 2:
                 return row3.count
             default:
                 return row4.count
@@ -97,11 +98,11 @@ extension ViewController: UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         
         switch indexPath.section {
-        case 1:
+        case 0:
             cell?.textLabel?.text = row1[indexPath.row]
-        case 2:
+        case 1:
             cell?.textLabel?.text = row2[indexPath.row]
-        case 3:
+        case 2:
             cell?.textLabel?.text = row3[indexPath.row]
         default:
             cell?.textLabel?.text = row4[indexPath.row]
