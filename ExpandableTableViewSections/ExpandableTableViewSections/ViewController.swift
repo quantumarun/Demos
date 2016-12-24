@@ -27,13 +27,13 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
 
-    func sectionTapped(sender: UIButton) {
+    func sectionTapped(_ sender: UIButton) {
         //print("section Tapped")
         let section = sender.tag
-        let shouldExpand = !expandedSections.containsObject(section)
+        let shouldExpand = !expandedSections.contains(section)
         if (shouldExpand) {
             expandedSections.removeAllObjects()
-            expandedSections.addObject(section)
+            expandedSections.add(section)
         } else {
             expandedSections.removeAllObjects()
         }
@@ -43,26 +43,26 @@ class ViewController: UIViewController, UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return sectionData.count
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRectMake(0, 0, 300, 28))
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView.init(frame: CGRect(x: 0, y: 0, width: 300, height: 28))
         var imageView = UIImageView()
-        if (expandedSections.containsObject(section)) {
-            imageView = UIImageView.init(frame: CGRectMake(10, 10, 18, 10))
+        if (expandedSections.contains(section)) {
+            imageView = UIImageView.init(frame: CGRect(x: 10, y: 10, width: 18, height: 10))
             imageView.image = UIImage(named: "down-arrow")
         } else {
-            imageView = UIImageView.init(frame: CGRectMake(10, 15, 10, 18))
+            imageView = UIImageView.init(frame: CGRect(x: 10, y: 15, width: 10, height: 18))
             imageView.image = UIImage(named: "right-arrow")
         }
         
-        let headerTitle = UILabel.init(frame: CGRectMake(38, 4, 250, 28))
+        let headerTitle = UILabel.init(frame: CGRect(x: 38, y: 4, width: 250, height: 28))
         headerTitle.text = sectionData[section]
         
-        let tappedSection = UIButton.init(frame: CGRectMake(0, 0, headerView.frame.size.width, headerView.frame.size.height))
-        tappedSection.addTarget(self, action: #selector(sectionTapped), forControlEvents: .TouchUpInside)
+        let tappedSection = UIButton.init(frame: CGRect(x: 0, y: 0, width: headerView.frame.size.width, height: headerView.frame.size.height))
+        tappedSection.addTarget(self, action: #selector(sectionTapped), for: .touchUpInside)
         tappedSection.tag = section
         
         headerView.addSubview(imageView)
@@ -71,8 +71,12 @@ extension ViewController: UITableViewDelegate {
         return headerView
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(expandedSections.containsObject(section)) {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(expandedSections.contains(section)) {
             switch section {
             case 1:
                 return row1.count
@@ -88,9 +92,9 @@ extension ViewController: UITableViewDelegate {
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         
         switch indexPath.section {
         case 1:
