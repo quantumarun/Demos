@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CustomCellDelegate {
 
     @IBOutlet weak var expandTableView: UITableView!
     var selectedIndex = -1
@@ -38,6 +38,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.team1.text = obj["Team1"]
         cell.team2.text = obj["Team2"]
         cell.score.text = obj["Score"]
+        cell.firstViewBtn.tag = indexPath.row
+        cell.secondViewBtn.tag = indexPath.row
+        cell.delegate = self
+        
+        //cell.secondView.isUserInteractionEnabled = true
+        //cell.contentView.addSubview(cell.secondViewBtn)
+        //cell.secondViewBtn.isUserInteractionEnabled = true
+        //cell.secondViewBtn.isEnabled = true
+        //cell.bringSubview(toFront: cell.secondViewBtn)
+        
+        //cell.selectionStyle = .none
+        //cell.contentView.isUserInteractionEnabled = false
+        /*
+        cell.firstViewBtn.addTarget(self, action: #selector(firstViewBtnClick), for: .touchUpInside)
+        cell.firstViewBtn.tag = indexPath.row
+        
+        cell.secondViewBtn.addTarget(self, action: #selector(secondViewBtnClick), for: .touchUpInside)
+        cell.secondViewBtn.tag = indexPath.row
+        
+         */
+        
+         //tappedSection.addTarget(self, action: #selector(sectionTapped), for: .touchUpInside)
+        
         return cell;
     }
     
@@ -49,6 +72,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        return nil
+    }
+    
+    
+    
+    func updateTableView(row: Int) {
+        
+        if(selectedIndex == row) {
+            selectedIndex = -1
+        } else {
+            selectedIndex = row
+        }
+        let path: NSIndexPath = NSIndexPath(row: row, section: 0)
+        self.expandTableView.beginUpdates()
+        self.expandTableView.reloadRows(at: [path as IndexPath], with: UITableViewRowAnimation.automatic )
+        self.expandTableView.endUpdates()
+        let cell = self.expandTableView.cellForRow(at: path as IndexPath) as! customCell
+        cell.contentView.bringSubview(toFront: cell.secondView)
+        //cell.contentView.isUserInteractionEnabled = false
+        //cell.secondViewBtn.isUserInteractionEnabled = true
+        //cell.secondViewBtn.isEnabled = true
+        //cell?.contentView.bringSubview(toFront: cell?.contentView.second)
+        
+    }
+    
+    /*
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(selectedIndex == indexPath.row) {
             selectedIndex = -1
@@ -59,6 +109,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.expandTableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic )
         self.expandTableView.endUpdates()
     }
+   */
+    
+    /*
+    func firstViewBtnClick(sender: UIButton) {
+        print(sender.tag)
+        if(selectedIndex == sender.tag) {
+            selectedIndex = -1
+        } else {
+            selectedIndex = sender.tag
+        }
+        let path: NSIndexPath = NSIndexPath(row: sender.tag, section: 0)
+        self.expandTableView.beginUpdates()
+        self.expandTableView.reloadRows(at: [path as IndexPath], with: UITableViewRowAnimation.automatic )
+        self.expandTableView.endUpdates()
+    }
+    
+    func secondViewBtnClick(sender: UIButton)  {
+        print(sender.tag)
+    }
+     */
 
 }
 

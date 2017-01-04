@@ -1,4 +1,4 @@
-//
+ //
 //  customCell.swift
 //  ExpandTableCellDemo
 //
@@ -8,15 +8,24 @@
 
 import UIKit
 
+protocol CustomCellDelegate: class {
+    func updateTableView(row: Int)
+}
+
 class customCell: UITableViewCell {
 
     @IBOutlet weak var matchName: UILabel!
+    @IBOutlet weak var firstViewBtn: UIButton!
     @IBOutlet weak var team1: UILabel!
     @IBOutlet weak var team2: UILabel!
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
+    @IBOutlet weak var secondViewBtn: UIButton!
     @IBOutlet weak var heightConstraintSecondView: NSLayoutConstraint!
+    
+    weak var delegate: CustomCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,10 +37,21 @@ class customCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func ShowHideSecondView(_ sender: UIButton) {
+        print("First View: \(sender.tag)")
+        delegate?.updateTableView(row: sender.tag)
+    }
+    
+    /*
     var showsDetails = false {
         didSet {
             heightConstraintSecondView.priority = showsDetails ? 250 : 999
         }
+    }
+    */
+    @IBAction func ShowDetail(_ sender: UIButton) {
+        print("Show Detail button tapped")
+        print("Second View: \(sender.tag)")
     }
 
 }
