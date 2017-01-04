@@ -10,6 +10,7 @@ import UIKit
 
 protocol CustomCellDelegate: class {
     func updateTableView(row: Int)
+    func navigateToDetail(row: Int)
 }
 
 class customCell: UITableViewCell {
@@ -42,16 +43,9 @@ class customCell: UITableViewCell {
         delegate?.updateTableView(row: sender.tag)
     }
     
-    /*
-    var showsDetails = false {
-        didSet {
-            heightConstraintSecondView.priority = showsDetails ? 250 : 999
-        }
-    }
-    */
     @IBAction func ShowDetail(_ sender: UIButton) {
-        print("Show Detail button tapped")
         print("Second View: \(sender.tag)")
+        delegate?.navigateToDetail(row: sender.tag)
     }
 
 }

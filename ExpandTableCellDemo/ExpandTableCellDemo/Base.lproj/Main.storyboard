@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="2JS-Ty-BSr" id="Fr7-xM-HFp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5F-ov-IpU" userLabel="FirstView">
@@ -63,7 +63,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0a-sb-aGc" userLabel="SecondView">
-                                                    <rect key="frame" x="0.0" y="40" width="375" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="40" width="375" height="59.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFl-nn-mEU">
                                                             <rect key="frame" x="59" y="8" width="100" height="21"/>
@@ -97,7 +97,7 @@
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-D8-K1y">
                                                             <rect key="frame" x="256" y="30" width="109" height="30"/>
-                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <state key="normal" title="Full ScoreBoard"/>
                                                             <connections>
@@ -105,7 +105,7 @@
                                                             </connections>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="KLd-7S-tNr" firstAttribute="centerX" secondItem="F0a-sb-aGc" secondAttribute="centerX" priority="998" id="0aw-t8-hIn"/>
                                                         <constraint firstItem="qFl-nn-mEU" firstAttribute="top" secondItem="F0a-sb-aGc" secondAttribute="top" priority="998" constant="8" id="Ay0-5j-4lg"/>
@@ -117,13 +117,19 @@
                                                         <constraint firstItem="Gfb-D8-K1y" firstAttribute="top" secondItem="KLd-7S-tNr" secondAttribute="top" constant="-5" id="um5-Fz-2hv"/>
                                                         <constraint firstAttribute="trailing" secondItem="Gfb-D8-K1y" secondAttribute="trailing" constant="10" id="wPm-Ux-ffD"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="rc5-ef-Rg2"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Z5F-ov-IpU" secondAttribute="trailing" id="D6c-cx-1vH"/>
                                                 <constraint firstAttribute="trailing" secondItem="F0a-sb-aGc" secondAttribute="trailing" id="D9r-KP-gKg"/>
                                                 <constraint firstItem="F0a-sb-aGc" firstAttribute="leading" secondItem="Fr7-xM-HFp" secondAttribute="leading" id="KVj-a9-fXq"/>
+                                                <constraint firstAttribute="bottom" secondItem="F0a-sb-aGc" secondAttribute="bottom" priority="999" id="Ry9-kY-Jf3"/>
                                                 <constraint firstItem="Z5F-ov-IpU" firstAttribute="top" secondItem="Fr7-xM-HFp" secondAttribute="top" id="YQC-gC-eoj"/>
                                                 <constraint firstItem="Z5F-ov-IpU" firstAttribute="leading" secondItem="Fr7-xM-HFp" secondAttribute="leading" id="jg1-Ey-omM"/>
                                                 <constraint firstItem="F0a-sb-aGc" firstAttribute="top" secondItem="Z5F-ov-IpU" secondAttribute="bottom" id="pAS-lM-9qa"/>
@@ -158,16 +164,17 @@
                     </view>
                     <connections>
                         <outlet property="expandTableView" destination="jrU-cF-kaY" id="3FL-C7-9xl"/>
+                        <segue destination="z9L-K5-j8T" kind="show" identifier="detail" id="eaQ-z4-OIE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="429"/>
+            <point key="canvasLocation" x="1" y="430"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Screen View Controller-->
         <scene sceneID="63J-xe-mKb">
             <objects>
-                <viewController storyboardIdentifier="detailscreen" id="z9L-K5-j8T" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailscreen" id="z9L-K5-j8T" customClass="DetailScreenViewController" customModule="ExpandTableCellDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cie-Lu-kkd"/>
                         <viewControllerLayoutGuide type="bottom" id="6YR-oK-7ab"/>
@@ -177,7 +184,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Score: 0-0 (This is a dummy Text)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCZ-6B-j6U">
-                                <rect key="frame" x="38.5" y="323" width="298" height="21"/>
+                                <rect key="frame" x="39" y="323" width="298" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

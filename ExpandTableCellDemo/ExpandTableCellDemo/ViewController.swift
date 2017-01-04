@@ -41,26 +41,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.firstViewBtn.tag = indexPath.row
         cell.secondViewBtn.tag = indexPath.row
         cell.delegate = self
-        
-        //cell.secondView.isUserInteractionEnabled = true
-        //cell.contentView.addSubview(cell.secondViewBtn)
-        //cell.secondViewBtn.isUserInteractionEnabled = true
-        //cell.secondViewBtn.isEnabled = true
-        //cell.bringSubview(toFront: cell.secondViewBtn)
-        
-        //cell.selectionStyle = .none
-        //cell.contentView.isUserInteractionEnabled = false
-        /*
-        cell.firstViewBtn.addTarget(self, action: #selector(firstViewBtnClick), for: .touchUpInside)
-        cell.firstViewBtn.tag = indexPath.row
-        
-        cell.secondViewBtn.addTarget(self, action: #selector(secondViewBtnClick), for: .touchUpInside)
-        cell.secondViewBtn.tag = indexPath.row
-        
-         */
-        
-         //tappedSection.addTarget(self, action: #selector(sectionTapped), for: .touchUpInside)
-        
         return cell;
     }
     
@@ -79,7 +59,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func updateTableView(row: Int) {
-        
         if(selectedIndex == row) {
             selectedIndex = -1
         } else {
@@ -89,13 +68,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.expandTableView.beginUpdates()
         self.expandTableView.reloadRows(at: [path as IndexPath], with: UITableViewRowAnimation.automatic )
         self.expandTableView.endUpdates()
-        let cell = self.expandTableView.cellForRow(at: path as IndexPath) as! customCell
-        cell.contentView.bringSubview(toFront: cell.secondView)
-        //cell.contentView.isUserInteractionEnabled = false
-        //cell.secondViewBtn.isUserInteractionEnabled = true
-        //cell.secondViewBtn.isEnabled = true
-        //cell?.contentView.bringSubview(toFront: cell?.contentView.second)
-        
+    }
+    
+    func navigateToDetail(row: Int) {
+        self.performSegue(withIdentifier: "detail", sender: nil)
     }
     
     /*
@@ -110,25 +86,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.expandTableView.endUpdates()
     }
    */
-    
-    /*
-    func firstViewBtnClick(sender: UIButton) {
-        print(sender.tag)
-        if(selectedIndex == sender.tag) {
-            selectedIndex = -1
-        } else {
-            selectedIndex = sender.tag
-        }
-        let path: NSIndexPath = NSIndexPath(row: sender.tag, section: 0)
-        self.expandTableView.beginUpdates()
-        self.expandTableView.reloadRows(at: [path as IndexPath], with: UITableViewRowAnimation.automatic )
-        self.expandTableView.endUpdates()
-    }
-    
-    func secondViewBtnClick(sender: UIButton)  {
-        print(sender.tag)
-    }
-     */
-
 }
 

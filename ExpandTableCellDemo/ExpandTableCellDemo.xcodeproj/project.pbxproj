@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F413ECCD1E1D705500702733 /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F413ECCC1E1D705500702733 /* DetailScreenViewController.swift */; };
 		F457288D1CCDE6F800893FA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457288C1CCDE6F800893FA6 /* AppDelegate.swift */; };
 		F457288F1CCDE6F800893FA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F457288E1CCDE6F800893FA6 /* ViewController.swift */; };
 		F45728921CCDE6F800893FA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45728901CCDE6F800893FA6 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F413ECCC1E1D705500702733 /* DetailScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailScreenViewController.swift; path = ../DetailScreenViewController.swift; sourceTree = "<group>"; };
 		F45728891CCDE6F700893FA6 /* ExpandTableCellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandTableCellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F457288C1CCDE6F800893FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F457288E1CCDE6F800893FA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		F457288B1CCDE6F800893FA6 /* ExpandTableCellDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F413ECCC1E1D705500702733 /* DetailScreenViewController.swift */,
 				F457288C1CCDE6F800893FA6 /* AppDelegate.swift */,
 				F457288E1CCDE6F800893FA6 /* ViewController.swift */,
 				F45728901CCDE6F800893FA6 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				F457288F1CCDE6F800893FA6 /* ViewController.swift in Sources */,
 				F457288D1CCDE6F800893FA6 /* AppDelegate.swift in Sources */,
+				F413ECCD1E1D705500702733 /* DetailScreenViewController.swift in Sources */,
 				F457289F1CCDEC5400893FA6 /* customCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
