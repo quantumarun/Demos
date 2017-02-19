@@ -17,6 +17,7 @@ class customCell: UITableViewCell {
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
     @IBOutlet weak var heightConstraintSecondView: NSLayoutConstraint!
+    @IBOutlet weak var summaryLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
