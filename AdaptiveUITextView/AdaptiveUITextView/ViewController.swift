@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func dismissKeyboard(sender: UIButton) {
+    @IBAction func dismissKeyboard(_ sender: UIButton) {
         self.textEntry.resignFirstResponder()
     }
     override func didReceiveMemoryWarning() {
@@ -28,12 +28,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextViewDelegate {
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         print("Content Height \(self.textEntry.contentSize.height) ")
         if(self.textEntry.contentSize.height < self.textHeightConstraint.constant) {
-            self.textEntry.scrollEnabled = false
+            self.textEntry.isScrollEnabled = false
         } else {
-            self.textEntry.scrollEnabled = true
+            self.textEntry.isScrollEnabled = true
         }
         
         return true

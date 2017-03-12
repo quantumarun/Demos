@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func changeText(sender: UIButton) {
+    @IBAction func changeText(_ sender: UIButton) {
         if(self.count > 3) {
             self.count = 0
         }
