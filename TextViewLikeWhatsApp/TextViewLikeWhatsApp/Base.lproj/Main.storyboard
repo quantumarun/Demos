@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextViewLikeWhatsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-Jk-DLW">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.66274509800000003" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kfy-EU-AhZ">
+                                <rect key="frame" x="0.0" y="102.5" width="375" height="502.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.82939402817876973" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="bcw-7W-w7I">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcw-7W-w7I" id="4RH-P9-WL4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Nf1-1H-kFU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VUx-4h-Lln"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIv-G9-oWF">
+                                <rect key="frame" x="0.0" y="613" width="375" height="46"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" pagingEnabled="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nTP-BF-oGg">
+                                        <rect key="frame" x="5" y="8" width="320" height="33"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="L2y-he-rST"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="j7n-xR-vf5"/>
+                                        </connections>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZ5-ui-iRI">
+                                        <rect key="frame" x="330" y="8" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Oei-Rf-qsP"/>
+                                        </constraints>
+                                        <state key="normal" title="Post"/>
+                                        <connections>
+                                            <action selector="postMsg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtD-qe-pkL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51574707206934711" green="0.96518855636353196" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oZ5-ui-iRI" firstAttribute="leading" secondItem="nTP-BF-oGg" secondAttribute="trailing" constant="5" id="CYO-4F-uKT"/>
+                                    <constraint firstItem="nTP-BF-oGg" firstAttribute="leading" secondItem="TIv-G9-oWF" secondAttribute="leading" constant="5" id="DSK-Lf-qom"/>
+                                    <constraint firstItem="nTP-BF-oGg" firstAttribute="top" secondItem="TIv-G9-oWF" secondAttribute="top" constant="8" id="DfO-ZY-seh"/>
+                                    <constraint firstAttribute="trailing" secondItem="oZ5-ui-iRI" secondAttribute="trailing" constant="5" id="NRc-QG-DiE"/>
+                                    <constraint firstItem="oZ5-ui-iRI" firstAttribute="top" secondItem="TIv-G9-oWF" secondAttribute="top" constant="8" id="NSg-o8-tY6"/>
+                                    <constraint firstAttribute="bottom" secondItem="nTP-BF-oGg" secondAttribute="bottom" constant="5" id="gFO-vs-8Gz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kfy-EU-AhZ" firstAttribute="top" secondItem="5Fk-Jk-DLW" secondAttribute="bottom" constant="8" id="76r-7k-f3L"/>
+                            <constraint firstItem="Kfy-EU-AhZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bz7-ed-2eA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TIv-G9-oWF" secondAttribute="bottom" constant="8" id="Fo2-s7-08E"/>
+                            <constraint firstItem="5Fk-Jk-DLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWn-B7-QXX"/>
+                            <constraint firstItem="TIv-G9-oWF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Mjj-sf-ZmG"/>
+                            <constraint firstItem="TIv-G9-oWF" firstAttribute="top" secondItem="Kfy-EU-AhZ" secondAttribute="bottom" constant="8" id="W0x-RU-tne"/>
+                            <constraint firstItem="5Fk-Jk-DLW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Xl1-Zx-KHe"/>
+                            <constraint firstItem="5Fk-Jk-DLW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="fAw-T6-fvv"/>
+                            <constraint firstItem="Kfy-EU-AhZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uqm-xo-P3q"/>
+                            <constraint firstItem="TIv-G9-oWF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcD-vb-x0h"/>
+                            <constraint firstItem="5Fk-Jk-DLW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="xTS-zc-hwJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="Kfy-EU-AhZ" id="GfV-hE-VEU"/>
+                        <outlet property="textViewContainer" destination="TIv-G9-oWF" id="7aK-SZ-5DX"/>
+                        <outlet property="tv" destination="nTP-BF-oGg" id="ZX1-VC-D63"/>
+                        <outlet property="tvHeightConstraint" destination="L2y-he-rST" id="MA3-Yg-uT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="451"/>
+        </scene>
+    </scenes>
+</document>

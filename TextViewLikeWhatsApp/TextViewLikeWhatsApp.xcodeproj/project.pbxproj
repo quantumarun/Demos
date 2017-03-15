@@ -1,0 +1,337 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F48846581D8565B8004E2192 /* Chat_Bubble_Green_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F48846571D8565B8004E2192 /* Chat_Bubble_Green_1.png */; };
+		F488465B1D8565E5004E2192 /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = F48846591D8565E5004E2192 /* Next.png */; };
+		F488465C1D8565E5004E2192 /* Next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F488465A1D8565E5004E2192 /* Next@2x.png */; };
+		F4D9EDCC1E76C34300F3D437 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4D9EDCB1E76C34300F3D437 /* Settings.bundle */; };
+		FAA5BDBA1D12D6B80085D4FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5BDB91D12D6B80085D4FC /* AppDelegate.swift */; };
+		FAA5BDBC1D12D6B80085D4FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5BDBB1D12D6B80085D4FC /* ViewController.swift */; };
+		FAA5BDBF1D12D6B80085D4FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5BDBD1D12D6B80085D4FC /* Main.storyboard */; };
+		FAA5BDC11D12D6B80085D4FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA5BDC01D12D6B80085D4FC /* Assets.xcassets */; };
+		FAA5BDC41D12D6B80085D4FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA5BDC21D12D6B80085D4FC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F48846571D8565B8004E2192 /* Chat_Bubble_Green_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat_Bubble_Green_1.png; sourceTree = "<group>"; };
+		F48846591D8565E5004E2192 /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
+		F488465A1D8565E5004E2192 /* Next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next@2x.png"; sourceTree = "<group>"; };
+		F4D9EDCB1E76C34300F3D437 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FAA5BDB61D12D6B70085D4FC /* TextViewLikeWhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextViewLikeWhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA5BDB91D12D6B80085D4FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA5BDBB1D12D6B80085D4FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAA5BDBE1D12D6B80085D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA5BDC01D12D6B80085D4FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA5BDC31D12D6B80085D4FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA5BDC51D12D6B80085D4FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA5BDB31D12D6B70085D4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAA5BDAD1D12D6B70085D4FC = {
+			isa = PBXGroup;
+			children = (
+				FAA5BDB81D12D6B70085D4FC /* TextViewLikeWhatsApp */,
+				FAA5BDB71D12D6B70085D4FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA5BDB71D12D6B70085D4FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5BDB61D12D6B70085D4FC /* TextViewLikeWhatsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA5BDB81D12D6B70085D4FC /* TextViewLikeWhatsApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAA5BDB91D12D6B80085D4FC /* AppDelegate.swift */,
+				FAA5BDBB1D12D6B80085D4FC /* ViewController.swift */,
+				FAA5BDBD1D12D6B80085D4FC /* Main.storyboard */,
+				FAA5BDC01D12D6B80085D4FC /* Assets.xcassets */,
+				F48846591D8565E5004E2192 /* Next.png */,
+				F488465A1D8565E5004E2192 /* Next@2x.png */,
+				F48846571D8565B8004E2192 /* Chat_Bubble_Green_1.png */,
+				FAA5BDC21D12D6B80085D4FC /* LaunchScreen.storyboard */,
+				FAA5BDC51D12D6B80085D4FC /* Info.plist */,
+				F4D9EDCB1E76C34300F3D437 /* Settings.bundle */,
+			);
+			path = TextViewLikeWhatsApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA5BDB51D12D6B70085D4FC /* TextViewLikeWhatsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA5BDC81D12D6B80085D4FC /* Build configuration list for PBXNativeTarget "TextViewLikeWhatsApp" */;
+			buildPhases = (
+				FAA5BDB21D12D6B70085D4FC /* Sources */,
+				FAA5BDB31D12D6B70085D4FC /* Frameworks */,
+				FAA5BDB41D12D6B70085D4FC /* Resources */,
+				F4D9EDCA1E76BDD800F3D437 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextViewLikeWhatsApp;
+			productName = TextViewLikeWhatsApp;
+			productReference = FAA5BDB61D12D6B70085D4FC /* TextViewLikeWhatsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA5BDAE1D12D6B70085D4FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MOSTELECOM;
+				TargetAttributes = {
+					FAA5BDB51D12D6B70085D4FC = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = FAA5BDB11D12D6B70085D4FC /* Build configuration list for PBXProject "TextViewLikeWhatsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA5BDAD1D12D6B70085D4FC;
+			productRefGroup = FAA5BDB71D12D6B70085D4FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA5BDB51D12D6B70085D4FC /* TextViewLikeWhatsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA5BDB41D12D6B70085D4FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5BDC41D12D6B80085D4FC /* LaunchScreen.storyboard in Resources */,
+				F488465C1D8565E5004E2192 /* Next@2x.png in Resources */,
+				F48846581D8565B8004E2192 /* Chat_Bubble_Green_1.png in Resources */,
+				F488465B1D8565E5004E2192 /* Next.png in Resources */,
+				FAA5BDC11D12D6B80085D4FC /* Assets.xcassets in Resources */,
+				FAA5BDBF1D12D6B80085D4FC /* Main.storyboard in Resources */,
+				F4D9EDCC1E76C34300F3D437 /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F4D9EDCA1E76BDD800F3D437 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$SRCROOT/TextViewLikeWhatsApp/Info.plist\")\nbuildN = $(($buildN + 1))\necho $buildN\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildN\" \"$SRCROOT/TextViewLikeWhatsApp/Info.plist\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA5BDB21D12D6B70085D4FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5BDBC1D12D6B80085D4FC /* ViewController.swift in Sources */,
+				FAA5BDBA1D12D6B80085D4FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAA5BDBD1D12D6B80085D4FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA5BDBE1D12D6B80085D4FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA5BDC21D12D6B80085D4FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA5BDC31D12D6B80085D4FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAA5BDC61D12D6B80085D4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA5BDC71D12D6B80085D4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA5BDC91D12D6B80085D4FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				INFOPLIST_FILE = TextViewLikeWhatsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.netfnet.TextViewLikeWhatsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAA5BDCA1D12D6B80085D4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				INFOPLIST_FILE = TextViewLikeWhatsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.netfnet.TextViewLikeWhatsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA5BDB11D12D6B70085D4FC /* Build configuration list for PBXProject "TextViewLikeWhatsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA5BDC61D12D6B80085D4FC /* Debug */,
+				FAA5BDC71D12D6B80085D4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA5BDC81D12D6B80085D4FC /* Build configuration list for PBXNativeTarget "TextViewLikeWhatsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA5BDC91D12D6B80085D4FC /* Debug */,
+				FAA5BDCA1D12D6B80085D4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA5BDAE1D12D6B70085D4FC /* Project object */;
+}
