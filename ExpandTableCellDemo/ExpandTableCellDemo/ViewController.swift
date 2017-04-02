@@ -71,7 +71,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func navigateToDetail(row: Int) {
+        selectedIndex = row
         self.performSegue(withIdentifier: "detail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detail") {
+            let detailController = segue.destination as! DetailScreenViewController
+            let obj = dataArray[selectedIndex]
+            detailController.setTeam1(t1: obj["Team1"]!)
+            detailController.setTeam2(t2: obj["Team2"]!)
+            detailController.setScore(sc: obj["Score"]!)
+            
+        }
     }
     
     /*
