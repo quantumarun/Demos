@@ -65,15 +65,15 @@ class ViewController: UIViewController {
     }
     
     func updateLabels(t: Timer) {
-        if(self.milliSecs == 59) {
+        if(self.milliSecs >= 59) {
             self.sec += 1
             self.milliSecs = 0
-            if (self.sec == 60) {
-                    self.min += 1
-                    self.sec = 0
-                    if (self.min == 60) {
-                        self.hrs += 1
-                        self.min = 0
+            if (self.sec >= 60) {
+                    self.min += self.sec/60
+                    self.sec = self.sec % 60
+                    if (self.min >= 60) {
+                        self.hrs += self.min/60
+                        self.min = self.min % 60
                     }
             }
         } else {
@@ -89,9 +89,25 @@ class ViewController: UIViewController {
     }
     
     func refresh (hours: Int, mins: Int, secs: Int) {
-        self.hrs += hours
-        self.min += mins
-        self.sec += secs
+        //self.hrs += hours
+        //self.min += mins
+        //self.sec += secs
+        var minutes = self.min
+        
+        if (secs >= 60) {
+            minutes += mins + secs/60
+            self.sec = secs % 60
+        } else {
+            self.sec = secs
+            minutes += mins
+        }
+        
+        if (minutes >= 60) {
+            self.hrs = hours + minutes/60
+            self.min = minutes % 60
+        } else {
+            self.min = minutes
+        }
         self.stopWatchLbl.text = String(format: "%02d : %02d : %02d : %02d", self.hrs, self.min, self.sec, self.milliSecs)
         self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: (#selector(ViewController.updateLabels(t:))), userInfo: nil, repeats: true)
         
